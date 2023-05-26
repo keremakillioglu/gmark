@@ -1,0 +1,245 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-Debug-ec580da4e47c3b0e73da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs"
+				},
+				{
+					"build" : "libs/argparse",
+					"jsonFile" : "directory-libs.argparse-Debug-42d69591cd800c457a8a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "libs/argparse",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "libs/pugixml",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.pugixml-Debug-de832eb74bc7afd2b33f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/pugixml",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-98e16a3b8ffe55ffdf9d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/queryinterface",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.queryinterface-Debug-7a97326582451900b4bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "src/queryinterface",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/querytranslate",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.querytranslate-Debug-2eda00fdacd74a496789.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "src/querytranslate",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "gMark",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "pugixml",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gmark-gen",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gmark-interface",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gmark-translate",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "cpp-mini-argparse::@566c06588aa97086d462",
+					"jsonFile" : "target-cpp-mini-argparse-Debug-6376efc71801b92c7dbc.json",
+					"name" : "cpp-mini-argparse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmark-gen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-gmark-gen-Debug-05ac3ce2c450acc7ba50.json",
+					"name" : "gmark-gen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gmark-interface::@cd3bece9d3aa13e49843",
+					"jsonFile" : "target-gmark-interface-Debug-54eea63e892206c7e2a1.json",
+					"name" : "gmark-interface",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gmark-translate::@6a0b7edf7c61c847e13d",
+					"jsonFile" : "target-gmark-translate-Debug-5a4486eb441f5470eba4.json",
+					"name" : "gmark-translate",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "pugixml::@138ca6fe4c2f69880e2e",
+					"jsonFile" : "target-pugixml-Debug-e87c0cdda97a15a7ca87.json",
+					"name" : "pugixml",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug",
+		"source" : "/Users/k2akilli/Desktop/Thesis/code/gmark"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

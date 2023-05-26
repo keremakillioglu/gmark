@@ -1,0 +1,954 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: gMark
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/edit_cache: phony libs/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/rebuild_cache: phony libs/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/CMakeFiles/install.util: CUSTOM_COMMAND libs/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/install: phony libs/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/install/local: phony libs/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/install/strip: phony libs/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/libs/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target cpp-mini-argparse
+
+
+#############################################
+# Order-only phony target for cpp-mini-argparse
+
+build cmake_object_order_depends_target_cpp-mini-argparse: phony || libs/argparse/CMakeFiles/cpp-mini-argparse.dir
+
+build libs/argparse/CMakeFiles/cpp-mini-argparse.dir/argparse.cpp.o: CXX_COMPILER__cpp-mini-argparse_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/libs/argparse/argparse.cpp || cmake_object_order_depends_target_cpp-mini-argparse
+  DEP_FILE = libs/argparse/CMakeFiles/cpp-mini-argparse.dir/argparse.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  OBJECT_DIR = libs/argparse/CMakeFiles/cpp-mini-argparse.dir
+  OBJECT_FILE_DIR = libs/argparse/CMakeFiles/cpp-mini-argparse.dir
+  TARGET_COMPILE_PDB = libs/argparse/CMakeFiles/cpp-mini-argparse.dir/cpp-mini-argparse.pdb
+  TARGET_PDB = libs/argparse/libcpp-mini-argparse.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target cpp-mini-argparse
+
+
+#############################################
+# Link the static library libs/argparse/libcpp-mini-argparse.a
+
+build libs/argparse/libcpp-mini-argparse.a: CXX_STATIC_LIBRARY_LINKER__cpp-mini-argparse_Debug libs/argparse/CMakeFiles/cpp-mini-argparse.dir/argparse.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = libs/argparse/CMakeFiles/cpp-mini-argparse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = libs/argparse/CMakeFiles/cpp-mini-argparse.dir/cpp-mini-argparse.pdb
+  TARGET_FILE = libs/argparse/libcpp-mini-argparse.a
+  TARGET_PDB = libs/argparse/libcpp-mini-argparse.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/argparse/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/argparse/edit_cache: phony libs/argparse/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/argparse/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/argparse/rebuild_cache: phony libs/argparse/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/argparse/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/argparse/CMakeFiles/install.util: CUSTOM_COMMAND libs/argparse/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/argparse/install: phony libs/argparse/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/argparse/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/argparse/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/argparse/install/local: phony libs/argparse/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/argparse/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/argparse/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/argparse/install/strip: phony libs/argparse/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/libs/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target pugixml
+
+
+#############################################
+# Order-only phony target for pugixml
+
+build cmake_object_order_depends_target_pugixml: phony || libs/pugixml/CMakeFiles/pugixml.dir
+
+build libs/pugixml/CMakeFiles/pugixml.dir/pugixml.cpp.o: CXX_COMPILER__pugixml_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/pugixml.cpp || cmake_object_order_depends_target_pugixml
+  DEP_FILE = libs/pugixml/CMakeFiles/pugixml.dir/pugixml.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = libs/pugixml/CMakeFiles/pugixml.dir
+  OBJECT_FILE_DIR = libs/pugixml/CMakeFiles/pugixml.dir
+  TARGET_COMPILE_PDB = libs/pugixml/CMakeFiles/pugixml.dir/pugixml.pdb
+  TARGET_PDB = libs/pugixml/libpugixml.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target pugixml
+
+
+#############################################
+# Link the static library libs/pugixml/libpugixml.a
+
+build libs/pugixml/libpugixml.a: CXX_STATIC_LIBRARY_LINKER__pugixml_Debug libs/pugixml/CMakeFiles/pugixml.dir/pugixml.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = libs/pugixml/CMakeFiles/pugixml.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = libs/pugixml/CMakeFiles/pugixml.dir/pugixml.pdb
+  TARGET_FILE = libs/pugixml/libpugixml.a
+  TARGET_PDB = libs/pugixml/libpugixml.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs/pugixml/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs/pugixml/edit_cache: phony libs/pugixml/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs/pugixml/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs/pugixml/rebuild_cache: phony libs/pugixml/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs/pugixml/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs/pugixml/CMakeFiles/install.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install: phony libs/pugixml/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs/pugixml/CMakeFiles/install/local.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install/local: phony libs/pugixml/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libs/pugixml/CMakeFiles/install/strip.util: CUSTOM_COMMAND libs/pugixml/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libs/pugixml/install/strip: phony libs/pugixml/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target gmark-gen
+
+
+#############################################
+# Order-only phony target for gmark-gen
+
+build cmake_object_order_depends_target_gmark-gen: phony || cmake_object_order_depends_target_cpp-mini-argparse cmake_object_order_depends_target_pugixml
+
+build src/CMakeFiles/gmark-gen.dir/config.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/config.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/config.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/configparser.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/configparser.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/configparser.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/gmark.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/gmark.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/gmark.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/correlation.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/correlation.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/correlation.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/cumulativeDistributionUtils.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/cumulativeDistributionUtils.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/cumulativeDistributionUtils.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/graphNode.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/graphNode.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/graphNode.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/incrementalDeterministicGraphGenerator.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/incrementalDeterministicGraphGenerator.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/incrementalDeterministicGraphGenerator.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/nodeGenerator.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/nodeGenerator.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/nodeGenerator.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/processingEdgeTypes.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/processingEdgeTypes.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/processingEdgeTypes.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/monStaGen/shiftingDegreeDistribution.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/monStaGen/shiftingDegreeDistribution.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/monStaGen/shiftingDegreeDistribution.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir/monStaGen
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/randomgen.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/randomgen.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/randomgen.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/test.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/test.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/test.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/time.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/time.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/time.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/workload.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/workload.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/workload.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+build src/CMakeFiles/gmark-gen.dir/workload2.cpp.o: CXX_COMPILER__gmark-gen_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/workload2.cpp || cmake_object_order_depends_target_gmark-gen
+  DEP_FILE = src/CMakeFiles/gmark-gen.dir/workload2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/gmark-gen.dir
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_PDB = bin/gmark-gen.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gmark-gen
+
+
+#############################################
+# Link the executable bin/gmark-gen
+
+build bin/gmark-gen: CXX_EXECUTABLE_LINKER__gmark-gen_Debug src/CMakeFiles/gmark-gen.dir/config.cpp.o src/CMakeFiles/gmark-gen.dir/configparser.cpp.o src/CMakeFiles/gmark-gen.dir/gmark.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/correlation.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/cumulativeDistributionUtils.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/graphNode.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/incrementalDeterministicGraphGenerator.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/nodeGenerator.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/processingEdgeTypes.cpp.o src/CMakeFiles/gmark-gen.dir/monStaGen/shiftingDegreeDistribution.cpp.o src/CMakeFiles/gmark-gen.dir/randomgen.cpp.o src/CMakeFiles/gmark-gen.dir/test.cpp.o src/CMakeFiles/gmark-gen.dir/time.cpp.o src/CMakeFiles/gmark-gen.dir/workload.cpp.o src/CMakeFiles/gmark-gen.dir/workload2.cpp.o | libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a || libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_LIBRARIES = libs/argparse/libcpp-mini-argparse.a  libs/pugixml/libpugixml.a
+  OBJECT_DIR = src/CMakeFiles/gmark-gen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = src/CMakeFiles/gmark-gen.dir/
+  TARGET_FILE = bin/gmark-gen
+  TARGET_PDB = bin/gmark-gen.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/install: phony src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/install/local: phony src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/install/strip: phony src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target gmark-interface
+
+
+#############################################
+# Order-only phony target for gmark-interface
+
+build cmake_object_order_depends_target_gmark-interface: phony || cmake_object_order_depends_target_cpp-mini-argparse cmake_object_order_depends_target_pugixml
+
+build src/queryinterface/CMakeFiles/gmark-interface.dir/queryinterface.cpp.o: CXX_COMPILER__gmark-interface_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/queryinterface/queryinterface.cpp || cmake_object_order_depends_target_gmark-interface
+  DEP_FILE = src/queryinterface/CMakeFiles/gmark-interface.dir/queryinterface.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/queryinterface/CMakeFiles/gmark-interface.dir
+  OBJECT_FILE_DIR = src/queryinterface/CMakeFiles/gmark-interface.dir
+  TARGET_COMPILE_PDB = src/queryinterface/CMakeFiles/gmark-interface.dir/
+  TARGET_PDB = bin/gmark-interface.pdb
+
+build src/queryinterface/CMakeFiles/gmark-interface.dir/test.cpp.o: CXX_COMPILER__gmark-interface_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/queryinterface/test.cpp || cmake_object_order_depends_target_gmark-interface
+  DEP_FILE = src/queryinterface/CMakeFiles/gmark-interface.dir/test.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/queryinterface/CMakeFiles/gmark-interface.dir
+  OBJECT_FILE_DIR = src/queryinterface/CMakeFiles/gmark-interface.dir
+  TARGET_COMPILE_PDB = src/queryinterface/CMakeFiles/gmark-interface.dir/
+  TARGET_PDB = bin/gmark-interface.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gmark-interface
+
+
+#############################################
+# Link the executable bin/gmark-interface
+
+build bin/gmark-interface: CXX_EXECUTABLE_LINKER__gmark-interface_Debug src/queryinterface/CMakeFiles/gmark-interface.dir/queryinterface.cpp.o src/queryinterface/CMakeFiles/gmark-interface.dir/test.cpp.o | libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a || libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_LIBRARIES = libs/argparse/libcpp-mini-argparse.a  libs/pugixml/libpugixml.a
+  OBJECT_DIR = src/queryinterface/CMakeFiles/gmark-interface.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = src/queryinterface/CMakeFiles/gmark-interface.dir/
+  TARGET_FILE = bin/gmark-interface
+  TARGET_PDB = bin/gmark-interface.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/queryinterface/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/queryinterface/edit_cache: phony src/queryinterface/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/queryinterface/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/queryinterface/rebuild_cache: phony src/queryinterface/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/queryinterface/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/queryinterface/CMakeFiles/install.util: CUSTOM_COMMAND src/queryinterface/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/queryinterface/install: phony src/queryinterface/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/queryinterface/CMakeFiles/install/local.util: CUSTOM_COMMAND src/queryinterface/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/queryinterface/install/local: phony src/queryinterface/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/queryinterface/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/queryinterface/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/queryinterface/install/strip: phony src/queryinterface/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/k2akilli/Desktop/Thesis/code/gmark/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target gmark-translate
+
+
+#############################################
+# Order-only phony target for gmark-translate
+
+build cmake_object_order_depends_target_gmark-translate: phony || cmake_object_order_depends_target_cpp-mini-argparse cmake_object_order_depends_target_pugixml
+
+build src/querytranslate/CMakeFiles/gmark-translate.dir/querytranslate.cpp.o: CXX_COMPILER__gmark-translate_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/querytranslate/querytranslate.cpp || cmake_object_order_depends_target_gmark-translate
+  DEP_FILE = src/querytranslate/CMakeFiles/gmark-translate.dir/querytranslate.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/querytranslate/CMakeFiles/gmark-translate.dir
+  OBJECT_FILE_DIR = src/querytranslate/CMakeFiles/gmark-translate.dir
+  TARGET_COMPILE_PDB = src/querytranslate/CMakeFiles/gmark-translate.dir/
+  TARGET_PDB = bin/gmark-translate.pdb
+
+build src/querytranslate/CMakeFiles/gmark-translate.dir/test.cpp.o: CXX_COMPILER__gmark-translate_Debug /Users/k2akilli/Desktop/Thesis/code/gmark/src/querytranslate/test.cpp || cmake_object_order_depends_target_gmark-translate
+  DEP_FILE = src/querytranslate/CMakeFiles/gmark-translate.dir/test.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
+  INCLUDES = -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs -I/Users/k2akilli/Desktop/Thesis/code/gmark/libs/pugixml/src
+  OBJECT_DIR = src/querytranslate/CMakeFiles/gmark-translate.dir
+  OBJECT_FILE_DIR = src/querytranslate/CMakeFiles/gmark-translate.dir
+  TARGET_COMPILE_PDB = src/querytranslate/CMakeFiles/gmark-translate.dir/
+  TARGET_PDB = bin/gmark-translate.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gmark-translate
+
+
+#############################################
+# Link the executable bin/gmark-translate
+
+build bin/gmark-translate: CXX_EXECUTABLE_LINKER__gmark-translate_Debug src/querytranslate/CMakeFiles/gmark-translate.dir/querytranslate.cpp.o src/querytranslate/CMakeFiles/gmark-translate.dir/test.cpp.o | libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a || libs/argparse/libcpp-mini-argparse.a libs/pugixml/libpugixml.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
+  LINK_LIBRARIES = libs/argparse/libcpp-mini-argparse.a  libs/pugixml/libpugixml.a
+  OBJECT_DIR = src/querytranslate/CMakeFiles/gmark-translate.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = src/querytranslate/CMakeFiles/gmark-translate.dir/
+  TARGET_FILE = bin/gmark-translate
+  TARGET_PDB = bin/gmark-translate.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/querytranslate/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/querytranslate/edit_cache: phony src/querytranslate/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/querytranslate/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/k2akilli/Desktop/Thesis/code/gmark -B/Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/querytranslate/rebuild_cache: phony src/querytranslate/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/querytranslate/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/querytranslate/CMakeFiles/install.util: CUSTOM_COMMAND src/querytranslate/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/querytranslate/install: phony src/querytranslate/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/querytranslate/CMakeFiles/install/local.util: CUSTOM_COMMAND src/querytranslate/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/querytranslate/install/local: phony src/querytranslate/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/querytranslate/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/querytranslate/all
+  COMMAND = cd /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/querytranslate/install/strip: phony src/querytranslate/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build cpp-mini-argparse: phony libs/argparse/libcpp-mini-argparse.a
+
+build gmark-gen: phony bin/gmark-gen
+
+build gmark-interface: phony bin/gmark-interface
+
+build gmark-translate: phony bin/gmark-translate
+
+build libcpp-mini-argparse.a: phony libs/argparse/libcpp-mini-argparse.a
+
+build libpugixml.a: phony libs/pugixml/libpugixml.a
+
+build pugixml: phony libs/pugixml/libpugixml.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug
+
+build all: phony libs/all src/all src/queryinterface/all src/querytranslate/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs
+
+build libs/all: phony libs/argparse/all libs/pugixml/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/argparse
+
+build libs/argparse/all: phony libs/argparse/libcpp-mini-argparse.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/libs/pugixml
+
+build libs/pugixml/all: phony libs/pugixml/libpugixml.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src
+
+build src/all: phony bin/gmark-gen
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/queryinterface
+
+build src/queryinterface/all: phony bin/gmark-interface
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/k2akilli/Desktop/Thesis/code/gmark/cmake-build-debug/src/querytranslate
+
+build src/querytranslate/all: phony bin/gmark-translate
+
+# =============================================================================
+# Unknown Build Time Dependencies.
+# Tell Ninja that they may appear as side effects of build rules
+# otherwise ordered by order-only dependencies.
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/argparse/CMakeLists.txt ../libs/pugixml/CMakeLists.txt ../libs/pugixml/scripts/pugixml.pc.in ../src/CMakeLists.txt ../src/queryinterface/CMakeLists.txt ../src/querytranslate/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../libs/CMakeLists.txt ../libs/argparse/CMakeLists.txt ../libs/pugixml/CMakeLists.txt ../libs/pugixml/scripts/pugixml.pc.in ../src/CMakeLists.txt ../src/queryinterface/CMakeLists.txt ../src/querytranslate/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
